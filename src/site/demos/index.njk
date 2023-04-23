@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+title: Demos
+eleventyImport:
+  collections: ["demo"]
+---
+
+<div class="demo-list">
+  {%- for demo in collections.demo -%}
+    <div class="demo">
+        <div class="demo-header">
+            <h3>{{ demo.data.title }}</h3>
+            <a class="demo-link-btn" href={{ demo.data.demoUrl }} target="blank">Visit link</a>
+        </div>
+        <div class="demo-content">
+            {{ demo.content | safe }}
+        </div>
+        <div class="rel-skills">
+            <p>Skills: </p>
+            <ul class="demo-skill-list">
+                {%- for skill in demo.data.skills -%}
+                    <li>{{skill}}</li>
+                {%- endfor -%}
+            </ul>
+        </div>
+    </div>
+  {%- endfor -%}
+</div>
+
