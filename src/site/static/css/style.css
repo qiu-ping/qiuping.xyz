@@ -131,6 +131,6 @@ footer {
             display: flex;
             flex-direction: column;
             height: 100vh;
-            margin: 0 10rem;
+            margin: 0 10%;
         }
 }
