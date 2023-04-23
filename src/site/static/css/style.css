@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin: 0 10em;
+    margin: 0 1rem;
 }
 
 header ul {
@@ -67,6 +67,7 @@ footer {
     overflow: hidden;
     margin-right: 2rem;
     margin-bottom: 2rem;
+    opacity: 0.8;
 }
 
 
@@ -82,6 +83,7 @@ footer {
     display: flex;
     align-items: baseline;
     padding: 0.5rem 1rem;
+    background-color: #b3c5d7;
 }
 
 .demo-skill-list {
@@ -91,7 +93,9 @@ footer {
 }
 
 .demo-skill-list li {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
     border: 1px #2f4858 solid;
     border-radius: 0.25rem;
     padding: 0.25rem 0.5rem;
@@ -101,6 +105,7 @@ footer {
 
 .demo-content {
     padding: 0.5rem 1rem;
+    background-color: #b3c5d7;
 }
 
 .demo-content:last-child {
@@ -119,4 +124,13 @@ footer {
 .demo-list {
     display: flex;
     flex-wrap: wrap;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0 10rem;
+        }
 }
