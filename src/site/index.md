@@ -1,7 +1,7 @@
 ---
 title: This is Ping
 subtitle: A full stack developer
-layout: layouts/base.njk
+layout: layouts/single-page.njk
 ---
 
 ## About Ping
